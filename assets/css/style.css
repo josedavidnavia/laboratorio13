@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+section {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex-basis: calc(33.33% - 1rem);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.task {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #337ab7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2e6da4;
+}
+
+.up-btn {
+  background-color: #337ab7;
+}
+
+.down-btn {
+  background-color: #d9534f;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+}
+
+/* Estilos específicos para cada sección */
+#todo-section {
+  border-bottom: 2px solid #f2f2f2;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+#doing-section {
+  border-bottom: 2px solid #f2f2f2;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#done-section {
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#add-task-form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#add-task-input {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+}
+
+#add-task-btn {
+  background-color: #337ab7;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #2e6da4;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    flex-basis: 100%;
+  }
+}

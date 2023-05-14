@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Task Manager</h1>
+    <form id="add-task-form">
+      <input type="text" id="add-task-input" placeholder="Enter a task...">
+      <button type="submit" id="add-task-btn">Add Task</button>
+    </form>
+  </header>
+  <main>
+    <section id="todo-section">
+      <h2>To Do</h2>
+      <div id="todo-tasks"></div>
+    </section>
+    <section id="doing-section">
+      <h2>Doing</h2>
+      <div id="doing-tasks"></div>
+    </section>
+    <section id="done-section">
+      <h2>Done</h2>
+      <div id="done-tasks"></div>
+    </section>
+  </main>
+  <script src="assets.js/script.js"></script>
+</body>
+</html>
+
